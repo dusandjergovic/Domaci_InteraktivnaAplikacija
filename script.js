@@ -17,6 +17,7 @@ document.querySelector('#dodajGrad').addEventListener('click', function() {
 
 })
 
+
 //      DUGME ZA PRIKAZIVANJE TOPLIH GRADOVA
 
 document.querySelector('#topliGradovi').addEventListener('click', function() {
@@ -31,6 +32,7 @@ document.querySelector('#topliGradovi').addEventListener('click', function() {
             let poruka = document.createTextNode(gradInfo);
             p.append(poruka);
             prikaziTopleGradove.append(p);
+            prikaziTopleGradove.classList.add('leto')
          }
     })
 })
@@ -38,7 +40,7 @@ document.querySelector('#topliGradovi').addEventListener('click', function() {
 
 //      DUGME ZA PRIKAZIVANJE HLADNIH GRADOVA
 
-document.querySelector('#hladniGradovi').addEventListener('click', function(){
+document.querySelector('#hladniGradovi').addEventListener('click', function() {
     
     document.querySelector('#prikaziHladneGradove').innerHTML = '';
 
@@ -50,8 +52,9 @@ document.querySelector('#hladniGradovi').addEventListener('click', function(){
             let poruka = document.createTextNode(gradInfo);
             p.append(poruka);
             prikaziHladneGradove.append(p);
-         }
 
+            prikaziHladneGradove.classList.add('zima')
+         }
     })    
  })
 

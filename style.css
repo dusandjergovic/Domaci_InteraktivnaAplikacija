@@ -5,3 +5,20 @@
 .plava {
     color: blue;
 }
+
+body {
+    background: url(img/1.jpg)  no-repeat;
+    background-size: cover;
+}
+
+.zima {
+    background-image: url(img/2.jpg);
+    width: 10rem;
+    height: 10rem;
+}
+
+.leto {
+    background-image: url(img/3.jpg);
+    width: 10rem;
+    height: 10rem;
+}
