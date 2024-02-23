@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 .crvena {
     color: red;
 }
@@ -11,14 +15,76 @@ body {
     background-size: cover;
 }
 
-.zima {
-    background-image: url(img/2.jpg);
-    width: 10rem;
-    height: 10rem;
+#dugmici {
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
-.leto {
-    background-image: url(img/3.jpg);
-    width: 10rem;
-    height: 10rem;
+#design {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
 }
+
+#design button {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 5rem;
+    height: 5rem;
+    background-color: lightblue;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+#design button:hover {
+    transform: scale(1.2);
+}
+
+#grad,
+#topliGrad,
+#hladniGrad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    align-items: center;;
+}
+
+#prikaziTopleGradove,
+#prikaziHladneGradove {
+    margin-left: 50%;
+}
+
+.slikaHladno {
+    background-image: url(img/4.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.slikaToplo {
+    background-image: url(img/5.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+#prikaziTopleGradove:hover,
+#prikaziHladneGradove:hover {
+    transform: scale(1.2);
+}
+
+h1 {
+    border: 1px solid;
+    padding: 1rem;
+    background-color: lightblue;
+    border-radius: .5rem;
+}
+

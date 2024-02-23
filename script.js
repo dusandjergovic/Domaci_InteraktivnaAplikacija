@@ -13,7 +13,6 @@ document.querySelector('#dodajGrad').addEventListener('click', function() {
     }
 
     gradovi.push(privremeni);
-    console.log(gradovi);
 
 })
 
@@ -28,11 +27,13 @@ document.querySelector('#topliGradovi').addEventListener('click', function() {
         if(grad['temperatura'] >= 12){
             let gradInfo = `${grad['ime']} ${grad['temperatura']}°C`
             let p = document.createElement('p');
+             //p.classList.add('crvena'),пробај; nece
             p.classList.add('crvena');
             let poruka = document.createTextNode(gradInfo);
             p.append(poruka);
             prikaziTopleGradove.append(p);
             prikaziTopleGradove.classList.add('leto')
+            prikaziTopleGradove.classList.add('slikaToplo')
          }
     })
 })
@@ -52,8 +53,8 @@ document.querySelector('#hladniGradovi').addEventListener('click', function() {
             let poruka = document.createTextNode(gradInfo);
             p.append(poruka);
             prikaziHladneGradove.append(p);
-
             prikaziHladneGradove.classList.add('zima')
+            prikaziHladneGradove.classList.add('slikaHladno')
          }
     })    
  })
