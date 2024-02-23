@@ -1,6 +1,9 @@
 let gradovi = [];
 
+//      DUGME ZA DODAVANJE GRADOVA U NIZ IZ KOJIH 
+
 document.querySelector('#dodajGrad').addEventListener('click', function() {
+    
     let userInput = prompt('Unesite neki grad');
     userInput = userInput.split(" ")
     
@@ -8,10 +11,13 @@ document.querySelector('#dodajGrad').addEventListener('click', function() {
         ime: userInput[0],
         temperatura: userInput[1]
     }
+
     gradovi.push(privremeni);
     console.log(gradovi);
-    
+
 })
+
+//      DUGME ZA PRIKAZIVANJE TOPLIH GRADOVA
 
 document.querySelector('#topliGradovi').addEventListener('click', function() {
     
@@ -28,6 +34,9 @@ document.querySelector('#topliGradovi').addEventListener('click', function() {
          }
     })
 })
+
+
+//      DUGME ZA PRIKAZIVANJE HLADNIH GRADOVA
 
 document.querySelector('#hladniGradovi').addEventListener('click', function(){
     
