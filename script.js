@@ -1,6 +1,6 @@
 let gradovi = [];
 
-//      DUGME ZA DODAVANJE GRADOVA U NIZ IZ KOJIH 
+//      DUGME ZA DODAVANJE GRADOVA U NIZ
 
 document.querySelector('#dodajGrad').addEventListener('click', function() {
     
