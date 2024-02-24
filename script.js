@@ -34,7 +34,7 @@ document.querySelector('#topliGradovi').addEventListener('click', function() {
             prikaziTopleGradove.append(p);
             prikaziTopleGradove.classList.add('leto')
             prikaziTopleGradove.classList.add('slikaToplo')
-         } else if(grad['temperatura'] == null) {
+         } else if(grad['temperatura'] == '') {
             alert('Niste uneli temperaturu')
          }
     })
@@ -57,7 +57,7 @@ document.querySelector('#hladniGradovi').addEventListener('click', function() {
             prikaziHladneGradove.append(p);
             prikaziHladneGradove.classList.add('zima')
             prikaziHladneGradove.classList.add('slikaHladno')
-         } else if (grad['temperatura'] == null) {
+         } else if (grad['temperatura'] == '') {
             alert('Niste uneli temperaturu') 
          }
     })    
